@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg7"
+    tools:context=".RegisterActivity">
+
+
+        <TextView
+            android:id="@+id/mTvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0B0A0A"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:ems="10"
+            android:hint="Full names"
+            android:inputType="textPersonName"
+            android:textColor="#020202"
+            android:textColorHint="#040303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mTvRegister" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textColor="#0C0C0C"
+            android:textColorHint="#050505"
+            app:layout_constraintEnd_toEndOf="@+id/edtName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtName"
+            app:layout_constraintTop_toTopOf="@+id/edtName" />
+
+        <EditText
+            android:id="@+id/edtDob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:textColor="#0B0A0A"
+            android:textColorHint="#050505"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtEmail"
+            app:layout_constraintTop_toTopOf="@+id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/baseline_security_24"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="number"
+            android:textColor="#050505"
+            android:textColorHint="#0E0E0E"
+            app:layout_constraintEnd_toEndOf="@+id/edtDob"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edtDob"
+            app:layout_constraintTop_toTopOf="@+id/edtDob" />
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:text="Create Account"
+            app:backgroundTint="#2196F3"
+            app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/edtPassword"
+            app:layout_constraintTop_toTopOf="@+id/edtPassword" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="196dp"
+            android:text="Already have an account?"
+            android:textColor="#070707"
+            app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/edtPassword"
+            app:layout_constraintTop_toTopOf="@+id/edtPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
